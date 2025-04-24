@@ -267,7 +267,7 @@ onBeforeUnmount(() => {
               </el-form-item>
             </Motion>
 
-            <Motion :delay="300">
+            <!-- <Motion :delay="300">
               <el-form-item>
                 <div class="w-full h-[20px] flex justify-between items-center">
                   <el-button
@@ -281,10 +281,10 @@ onBeforeUnmount(() => {
                   </el-button>
                 </div>
               </el-form-item>
-            </Motion>
+            </Motion> -->
           </el-form>
 
-          <Motion v-if="currentPage === 0" :delay="350">
+          <!-- <Motion v-if="currentPage === 0" :delay="350">
             <el-form-item>
               <el-divider>
                 <p class="text-xs text-gray-500">{{ "第三方登录" }}</p>
@@ -303,7 +303,7 @@ onBeforeUnmount(() => {
                 </span>
               </div>
             </el-form-item>
-          </Motion>
+          </Motion> -->
           <!-- 手机号登录 -->
           <phone v-if="currentPage === 1" v-model:current-page="currentPage" />
           <!-- 二维码登录 -->
